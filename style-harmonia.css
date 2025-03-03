@@ -1,0 +1,389 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+body {
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 15px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header .logo h1 {
+    font-size: 2.5em;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: 600;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    color: #ff7f50;
+    transition: color 0.3s ease;
+}
+#hero {
+    height: 100vh;
+    background-image: url('hotel_main..jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+#hero h2 {
+    font-size: 3em;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#hero p {
+    font-size: 1.3em;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+}
+
+#hero .btn-primary {
+    background-color: #ff7f50;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border-radius: 25px;
+    color: white;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+#hero .btn-primary:hover {
+    background-color: #e06d3c;
+}
+#about {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#about h3 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2em;
+    color: #555;
+    line-height: 1.8;
+}
+#rooms {
+    background-color: #f4f4f4;
+    padding: 60px 0;
+}
+
+#rooms h3 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.rooms-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.room {
+    width: 32%;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+}
+
+.room img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.room-info {
+    padding: 20px;
+}
+
+.room-info h4 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.room-info p {
+    font-size: 1.1em;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.room-info .btn-secondary {
+    background-color: #ff7f50;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.room-info .btn-secondary:hover {
+    background-color: #e06d3c;
+}
+#services {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+#services h3 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service {
+    width: 30%;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.service img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.service h4 {
+    font-size: 1.8em;
+    margin: 20px 0;
+    color: #333;
+}
+
+.service p {
+    font-size: 1.1em;
+    color: #666;
+}
+#gallery {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+#gallery h3 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gallery-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gallery-grid a {
+    width: 24%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+#testimonials {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.testimonials-slider {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    position: relative;
+}
+
+.testimonial {
+    width: 32%;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial p {
+    font-size: 1.1em;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.testimonial p:last-child {
+    font-style: italic;
+    font-size: 1.2em;
+    color: #333;
+}
+#contact {
+    background-color: #f4f4f4;
+    padding: 60px 0;
+}
+
+#contact h3 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contact textarea {
+    height: 150px;
+}
+
+#contact button {
+    background-color: #ff7f50;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #e06d3c;
+}
+#faq {
+    padding: 60px 0;
+    background-color: #f4f4f4;
+}
+
+.accordion-item {
+    margin-bottom: 20px;
+}
+
+.accordion-btn {
+    background-color: #ff7f50;
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+    width: 100%;
+    text-align: left;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-btn:hover {
+    background-color: #e06d3c;
+}
+
+.accordion-content {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: 10px;
+    display: none;
+}
+
+.accordion-content p {
+    font-size: 1.1em;
+    color: #555;
+}
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1em;
+}
+@media (max-width: 768px) {
+    .rooms-gallery, .services-list, .gallery-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .room, .service, .gallery-grid a {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .testimonials-slider {
+        flex-direction: column;
+        align-items: center;
+    }
+}
